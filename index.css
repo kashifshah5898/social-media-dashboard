@@ -40,7 +40,7 @@
   letter-spacing: 5px;
 }
 .spacing-2px {
-  letter-spacing: -2px;
+  letter-spacing: 2px;
 }
 .upArrowWidth {
   height: 0.5rem;
