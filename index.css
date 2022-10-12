@@ -33,13 +33,28 @@
   display: flex;
   justify-content: center;
 }
+.spacing5px {
+  letter-spacing: 5px;
+}
+.spacing-2px {
+  letter-spacing: -2px;
+}
+.upArrowWidth {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+#borderTop {
+  border-top: 5px solid #178ff5;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 /* ....................................... */
 
 #body {
   background-color: #20222f;
 }
 .colorWhite {
-  color: white;
+  color: #ffffff;
 }
 .totalFollowers {
   color: #8c98c6;
