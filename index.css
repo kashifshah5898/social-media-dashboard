@@ -10,6 +10,9 @@
 .font56px {
   font-size: 56px;
 }
+.font32px {
+  font-size: 32px;
+}
 .bold {
   font-weight: bold;
 }
@@ -65,6 +68,20 @@
 .upperCardWidth {
   /* width: 15rem; */
 }
+.lowerCardFirstRow {
+  padding-right: 10%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.lowerRightCorner {
+  display: flex;
+  margin-top: 6%;
+  align-items: center;
+}
+.ml15 {
+  margin-left: 15%;
+}
 /* ....................................... */
 
 #body {
@@ -82,6 +99,10 @@
 .navCss {
   font-weight: bold;
   font-size: 28px;
+}
+.navCss2 {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 /* slider   */
