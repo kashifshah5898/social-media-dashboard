@@ -23,6 +23,9 @@
 .green {
   color: #1eb589;
 }
+.red {
+  color: #dc414c;
+}
 .rowCard {
   background-color: #252b42 !important;
 }
@@ -43,10 +46,24 @@
   height: 0.5rem;
   width: 0.5rem;
 }
-#borderTop {
+#borderTopOne {
   border-top: 5px solid #178ff5;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+#borderTopThree {
+  border-top: 5px solid #df4896;
+  /* border-top: 5px solid linear-gradient(to right, #fdc366 0%, #ee877e 100%); */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#borderTopFour {
+  border-top: 5px solid #c4032b;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.upperCardWidth {
+  /* width: 15rem; */
 }
 /* ....................................... */
 
