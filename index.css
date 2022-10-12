@@ -1,0 +1,114 @@
+.fontInter {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+.font14px {
+  font-size: 14px;
+}
+.font12px {
+  font-size: 12px;
+}
+.font56px {
+  font-size: 56px;
+}
+.bold {
+  font-weight: bold;
+}
+.regular {
+  font-weight: regular;
+}
+
+.rowMT-4 {
+  justify-content: space-between;
+}
+.green {
+  color: #1eb589;
+}
+.rowCard {
+  background-color: #252b42 !important;
+}
+.userName {
+  color: #8c98c6;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+/* ....................................... */
+
+#body {
+  background-color: #20222f;
+}
+.colorWhite {
+  color: white;
+}
+.totalFollowers {
+  color: #8c98c6;
+}
+.checkBorder {
+  border: 2px solid red;
+}
+.navCss {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* slider   */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #333a55;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #40db82;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #40db82;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
