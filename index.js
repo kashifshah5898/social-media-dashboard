@@ -25,6 +25,7 @@ const toggle = () => {
     for (let index = 0; index < rowCard.length; index++) {
       rowCard[index].style.setProperty("background-Color", "#F1F3FA", "important");
     }
+    document.getElementById("overViewToday").style.color = "#63687D";
   } else {
     document.getElementById("body").style.backgroundColor = "#20222f";
 
@@ -43,6 +44,7 @@ const toggle = () => {
     for (let index = 0; index < rowCard.length; index++) {
       rowCard[index].style.setProperty("background-Color", "#252b42", "important");
     }
+    document.getElementById("overViewToday").style.color = "#FFFFFF";
   }
 };
 
