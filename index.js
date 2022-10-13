@@ -45,3 +45,9 @@ const toggle = () => {
     }
   }
 };
+
+// onHover
+// white screen #E1E4F0
+
+// onHover
+// black screen #333A55

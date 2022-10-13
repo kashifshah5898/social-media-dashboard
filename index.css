@@ -130,6 +130,7 @@
   /* background-color: #ccc; */
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-top: -2px;
 }
 
 .slider:before {
