@@ -189,7 +189,7 @@ input:checked + .slider:before {
 @media only screen and (max-width: 956px) {
   #hr {
     margin-top: 1rem;
-    border-top: 2px solid #333a55;
+    border-top: 1px solid #333a55;
   }
 }
 @media only screen and (min-width: 957px) {
