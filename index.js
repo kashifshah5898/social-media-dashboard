@@ -7,7 +7,6 @@ const toggle = () => {
   let rowCard = document.getElementsByClassName("rowCard");
   let custombg = document.getElementsByClassName("custombg");
 
-  // 63687D
   if (isChecked) {
     console.log("White");
     document.getElementById("body").style.backgroundColor = "#FFFFFF";
@@ -64,3 +63,43 @@ const toggle = () => {
 
 // onHover
 // black screen #333A55
+
+const cardColorEnter = (param) => {
+  console.log("card enter: ", param);
+  let isChecked = document.getElementById("toggleCheckBox").checked;
+  let rowCard = document.getElementsByClassName("rowCard");
+
+  if (isChecked) {
+    for (let index = 0; index < rowCard.length; index++) {
+      if (param == index) {
+        rowCard[index].style.setProperty("background-Color", "#E1E4F0", "important");
+      } else {
+        rowCard[index].style.setProperty("background-Color", "#F1F3FA", "important");
+      }
+    }
+  } else {
+    for (let index = 0; index < rowCard.length; index++) {
+      if (param == index) {
+        rowCard[index].style.setProperty("background-Color", "#333A55", "important");
+      } else {
+        rowCard[index].style.setProperty("background-Color", "#252B42", "important");
+      }
+    }
+  }
+};
+const cardColorLeave = (param) => {
+  console.log("card leave: ", param);
+
+  let isChecked = document.getElementById("toggleCheckBox").checked;
+  let rowCard = document.getElementsByClassName("rowCard");
+
+  if (isChecked) {
+    for (let index = 0; index < rowCard.length; index++) {
+      rowCard[index].style.setProperty("background-Color", "#F1F3FA", "important");
+    }
+  } else {
+    for (let index = 0; index < rowCard.length; index++) {
+      rowCard[index].style.setProperty("background-Color", "#252B42", "important");
+    }
+  }
+};
