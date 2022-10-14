@@ -10,6 +10,7 @@ const toggle = () => {
   if (isChecked) {
     document.getElementById("body").style.backgroundColor = "#FFFFFF";
     document.getElementById("overViewToday").style.color = "#63687D";
+    document.getElementById("hr").style.borderTop = "2px solid #848BAB";
 
     for (let index = 0; index < colorWhite.length; index++) {
       colorWhite[index].style.color = "#1D1F29";
@@ -33,6 +34,7 @@ const toggle = () => {
   } else {
     document.getElementById("body").style.backgroundColor = "#1D1F29";
     document.getElementById("overViewToday").style.color = "#FFFFFF";
+    document.getElementById("hr").style.borderTop = "2px solid #333a55";
 
     for (let index = 0; index < colorWhite.length; index++) {
       colorWhite[index].style.color = "#FFFFFF";

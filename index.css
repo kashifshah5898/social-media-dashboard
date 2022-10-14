@@ -181,3 +181,19 @@ input:checked + .slider:before {
 .card-body:hover {
   cursor: pointer;
 }
+
+#hr {
+  margin-top: 0rem;
+  border-top: none;
+}
+@media only screen and (max-width: 956px) {
+  #hr {
+    margin-top: 1rem;
+    border-top: 2px solid #333a55;
+  }
+}
+@media only screen and (min-width: 957px) {
+  #hr {
+    display: none;
+  }
+}
