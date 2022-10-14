@@ -5,10 +5,13 @@ const toggle = () => {
   let totalFollowers = document.getElementsByClassName("totalFollowers");
   let userName = document.getElementsByClassName("userName");
   let rowCard = document.getElementsByClassName("rowCard");
+  let custombg = document.getElementsByClassName("custombg");
 
   // 63687D
   if (isChecked) {
+    console.log("White");
     document.getElementById("body").style.backgroundColor = "#FFFFFF";
+    document.getElementById("overViewToday").style.color = "#63687D";
 
     for (let index = 0; index < colorWhite.length; index++) {
       colorWhite[index].style.color = "#1D1F29";
@@ -25,9 +28,15 @@ const toggle = () => {
     for (let index = 0; index < rowCard.length; index++) {
       rowCard[index].style.setProperty("background-Color", "#F1F3FA", "important");
     }
-    document.getElementById("overViewToday").style.color = "#63687D";
+
+    for (let index = 0; index < custombg.length; index++) {
+      custombg[index].style.backgroundColor = "#F7F9FF";
+    }
   } else {
-    document.getElementById("body").style.backgroundColor = "#20222f";
+    console.log("Black");
+
+    document.getElementById("body").style.backgroundColor = "#1D1F29";
+    document.getElementById("overViewToday").style.color = "#FFFFFF";
 
     for (let index = 0; index < colorWhite.length; index++) {
       colorWhite[index].style.color = "#FFFFFF";
@@ -44,7 +53,9 @@ const toggle = () => {
     for (let index = 0; index < rowCard.length; index++) {
       rowCard[index].style.setProperty("background-Color", "#252b42", "important");
     }
-    document.getElementById("overViewToday").style.color = "#FFFFFF";
+    for (let index = 0; index < custombg.length; index++) {
+      custombg[index].style.backgroundColor = "#20222f";
+    }
   }
 };
 
