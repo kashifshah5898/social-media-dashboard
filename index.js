@@ -8,7 +8,6 @@ const toggle = () => {
   let custombg = document.getElementsByClassName("custombg");
 
   if (isChecked) {
-    console.log("White");
     document.getElementById("body").style.backgroundColor = "#FFFFFF";
     document.getElementById("overViewToday").style.color = "#63687D";
 
@@ -32,8 +31,6 @@ const toggle = () => {
       custombg[index].style.backgroundColor = "#F7F9FF";
     }
   } else {
-    console.log("Black");
-
     document.getElementById("body").style.backgroundColor = "#1D1F29";
     document.getElementById("overViewToday").style.color = "#FFFFFF";
 
@@ -58,14 +55,7 @@ const toggle = () => {
   }
 };
 
-// onHover
-// white screen #E1E4F0
-
-// onHover
-// black screen #333A55
-
 const cardColorEnter = (param) => {
-  console.log("card enter: ", param);
   let isChecked = document.getElementById("toggleCheckBox").checked;
   let rowCard = document.getElementsByClassName("rowCard");
 
@@ -87,9 +77,8 @@ const cardColorEnter = (param) => {
     }
   }
 };
-const cardColorLeave = (param) => {
-  console.log("card leave: ", param);
 
+const cardColorLeave = (param) => {
   let isChecked = document.getElementById("toggleCheckBox").checked;
   let rowCard = document.getElementsByClassName("rowCard");
 
